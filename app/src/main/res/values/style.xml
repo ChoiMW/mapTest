@@ -2,6 +2,7 @@
 
 <resources>
 
+
     <style name="chipText" parent="TextAppearance.MaterialComponents.Chip">
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>

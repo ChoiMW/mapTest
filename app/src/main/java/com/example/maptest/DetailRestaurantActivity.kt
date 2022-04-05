@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
 import androidx.viewpager2.widget.ViewPager2
 import com.example.maptest.databinding.ActivityDetailrestaruntBinding
 import com.google.android.material.chip.Chip
@@ -78,15 +81,14 @@ class DetailRestaurantActivity : AppCompatActivity() {
             override fun onPageSelected( position :Int) {
                 super.onPageSelected(position)
                 mIndicator.animatePageSelected(position % num_pages)
+
             }
+
         })
 
-
-
-        button_back.setOnClickListener( View.OnClickListener{
+        button_back.setOnClickListener {
             finish()
-        } )
-
+        }
 
     }
 

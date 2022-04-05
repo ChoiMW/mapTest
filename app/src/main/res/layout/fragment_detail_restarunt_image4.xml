@@ -12,5 +12,6 @@
         android:gravity="center"
         android:text="더보기..."
         android:textColor="@android:color/darker_gray"
+        android:id="@+id/textView_restaurant_image_more"
         android:textSize="30dp" />
 </LinearLayout>

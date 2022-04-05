@@ -1,9 +1,8 @@
 package com.example.maptest
 
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import java.lang.Exception
+
 
 class MyAdapter(drActivity: DetailRestaurantActivity, nPages: Int) : FragmentStateAdapter(drActivity) {
 
@@ -29,6 +28,7 @@ class MyAdapter(drActivity: DetailRestaurantActivity, nPages: Int) : FragmentSta
     }
 
 
+
     override fun getItemCount() :Int {
         return 2000
     }
@@ -37,6 +37,7 @@ class MyAdapter(drActivity: DetailRestaurantActivity, nPages: Int) : FragmentSta
     fun getRealPosition(position :Int) : Int {
         return position % cnt
     }
+
 
 
 }

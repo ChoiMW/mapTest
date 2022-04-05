@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import com.example.maptest.databinding.FragmentDetailRestaruntImage3Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,16 +38,27 @@ class DetailRestaruntImageFragment3 : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_detail_restarunt_image3, container, false)
     }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val binding = FragmentDetailRestaruntImage3Binding.bind(view)
+        binding.imageViewRestaurantImage3.setOnClickListener {
+            //Todo : 클릭시 사진 확대
+            Toast.makeText(
+                getActivity(),
+                "click image: 3" ,
+                Toast.LENGTH_SHORT
+            ).show()
+        }
 
+    }
+    /**
     companion object {
-        /**
          * Use this factory method to create a new instance of
          * this fragment using the provided parameters.
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
          * @return A new instance of fragment DetailRestaruntImageFragment3.
-         */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
@@ -56,4 +69,5 @@ class DetailRestaruntImageFragment3 : Fragment() {
                 }
             }
     }
+    */
 }

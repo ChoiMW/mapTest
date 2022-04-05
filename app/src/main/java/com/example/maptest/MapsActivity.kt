@@ -76,6 +76,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(yeouido,13f))
 
 
+        //TODO: 검색창 클릭시 해쉬태그 검색 액티비티 출력
+
+
+
     }
 
     private fun changeSelectedMarker(marker: Marker) {
